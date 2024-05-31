@@ -199,7 +199,7 @@
 				<section id="section-work" class="page-section mt-6">
 
 					<div class="heading-block text-center">
-						<h2>Our Works</h2>
+						<h2>Book A Service</h2>
 						<span>Some of the Awesome Projects we've worked on.</span>
 					</div>
 					<div class="container">
@@ -358,38 +358,39 @@
 				
 
 						<div class="fancy-title title-border title-center mt-4">
-							<h4>Skills we are Perfect in</h4>
+							<h4>Best Rated Providers</h4>
 						</div>
 
 						<div class="row col-mb-30">
 							<div class="col-sm-6 col-lg-3 text-center">
-								<div class="rounded-skill" data-color="#D01C1C" data-size="150" data-percent="90" data-width="2" data-animate="3000">
-									<div class="counter counter-inherit"><span data-from="1" data-to="90" data-refresh-interval="50" data-speed="3000"></span>%</div>
+								<div class="rounded-skill" data-color="#FFD700" data-size="150" data-percent="90" data-width="2" data-animate="3000">
+									<div class="counter counter-inherit"><span data-from="1" data-to="4.5" data-refresh-interval="50" data-speed="3000"></span>☆</div>
 								</div>
-								<h5>HTML5</h5>
+								<h5>Beauty Bliss Spa</h5>
 							</div>
-
+						
 							<div class="col-sm-6 col-lg-3 text-center">
-								<div class="rounded-skill" data-color="#1770A4" data-size="150" data-percent="75" data-width="2" data-animate="3000">
-									<div class="counter counter-inherit"><span data-from="1" data-to="75" data-refresh-interval="50" data-speed="3000"></span>%</div>
+								<div class="rounded-skill" data-color="#FFD700" data-size="150" data-percent="75" data-width="2" data-animate="3000">
+									<div class="counter counter-inherit"><span data-from="1" data-to="3.75" data-refresh-interval="50" data-speed="3000"></span>☆</div>
 								</div>
-								<h5>CSS3</h5>
+								<h5>Glamour Touch</h5>
 							</div>
-
+						
 							<div class="col-sm-6 col-lg-3 text-center">
-								<div class="rounded-skill" data-color="#6A89AA" data-size="150" data-percent="85" data-width="2" data-animate="3000">
-									<div class="counter counter-inherit"><span data-from="1" data-to="85" data-refresh-interval="50" data-speed="3000"></span>%</div>
+								<div class="rounded-skill" data-color="#FFD700" data-size="150" data-percent="85" data-width="2" data-animate="3000">
+									<div class="counter counter-inherit"><span data-from="1" data-to="4.25" data-refresh-interval="50" data-speed="3000"></span>☆</div>
 								</div>
-								<h5>PHP</h5>
+								<h5>Elegance Salon</h5>
 							</div>
-
+						
 							<div class="col-sm-6 col-lg-3 text-center">
-								<div class="rounded-skill" data-color="#248673" data-size="150" data-percent="80" data-width="2" data-animate="3000">
-									<div class="counter counter-inherit"><span data-from="1" data-to="80" data-refresh-interval="50" data-speed="3000"></span>%</div>
+								<div class="rounded-skill" data-color="pink" data-size="150" data-percent="80" data-width="2" data-animate="3000">
+									<div class="counter counter-inherit"><span data-from="1" data-to="4.0" data-refresh-interval="50" data-speed="3000"></span>☆</div>
 								</div>
-								<h5>jQuery</h5>
+								<h5>Radiant Glow Spa</h5>
 							</div>
 						</div>
+						
 
 					</div>
 
@@ -1065,6 +1066,29 @@
 	<!-- JavaScripts
 	============================================= -->
 	<script src="js/functions.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $('.counter span').each(function() {
+        var $this = $(this),
+            countTo = $this.attr('data-to');
+        
+        $({ countNum: $this.text() }).animate({
+            countNum: countTo
+        },
+        {
+            duration: 3000,
+            easing:'linear',
+            step: function() {
+                $this.text(this.countNum.toFixed(2));
+            },
+            complete: function() {
+                $this.text(this.countNum.toFixed(2));
+            }
+        });  
+    });
+});
+</script>
 
 </body>
 </html>
