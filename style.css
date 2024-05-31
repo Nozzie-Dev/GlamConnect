@@ -34181,3 +34181,32 @@ body.dark {
   color: rgba(255, 255, 255, 0.4);
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+/*Added styling*/
+.tile {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tile-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+}
+.booking-btn {
+  background-color: #ff4081;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
